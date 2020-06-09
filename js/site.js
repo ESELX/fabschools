@@ -58,7 +58,13 @@ $(document).ready(function() {
     $('html, body').animate({
         scrollTop: $("#elementtoScrollToID").offset().top
     }, 2000);
-});
+  });
+
+  $('.SmoothmyTop').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 1000);
+    return false;
+  });
+
 
   function resize() {
     $body.removeClass('has-docked-nav')
@@ -68,10 +74,12 @@ $(document).ready(function() {
 
   function onScroll() {
     if(navOffsetTop < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-      $body.addClass('has-docked-nav')
+      $body.addClass('has-docked-nav');
+
     }
     if(navOffsetTop > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
-      $body.removeClass('has-docked-nav')
+      $body.removeClass('has-docked-nav');
+
     }
   }
 

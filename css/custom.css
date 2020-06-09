@@ -73,13 +73,27 @@ a:hover{
 }
 
 .navbar {
-    visibility: visible;}
+    display:block;}
 
 .logotipo {
     display: block;
     width: calc(350px + 10vw);
     margin-left: auto;
     margin-right: auto;
+}
+
+.topsy{
+    font-size: calc(15px + 1vw);
+    letter-spacing: calc(.04rem+.01vw);
+    margin-top: 2.5vh;
+}
+
+.gogo {
+    display: block;
+    width: calc(8px + 4vw);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.6vh;
 }
 
 
@@ -107,6 +121,12 @@ a:hover{
         width: 90%;
     }
 
+    .topsy{
+        font-size: calc(24px + 1vw);
+        letter-spacing: calc(.04rem+.01vw);
+        margin-top: 2.5vh;
+    }
+
 
 
 
@@ -115,6 +135,12 @@ a:hover{
 /* Larger than tablet */
 @media (min-width: 750px) {
 
+    .topsy{
+        font-size: calc(30px + 1vw);
+        letter-spacing: calc(.04rem+.01vw);
+        margin-top: 2.5vh;
+    }
+
     /* Logo Main centrado*/
 
     .logotipo {
@@ -122,7 +148,7 @@ a:hover{
         width: calc(450px + 10vw);
         margin-left: auto;
         margin-right: auto;
-        margin-top: 40vh;
+        margin-top: 30vh;
     }
 
     /* Navbar */
@@ -169,14 +195,11 @@ a:hover{
         color: #55676b; }
 
     .navbar-logozito {
-
-        visibility: hidden;
+        display: none;
         float: left;
         height: calc(23px + 0.7vw);
         margin-right: 0;
-
     }
-
 
     .has-docked-nav .navbar {
         display: block;
@@ -190,18 +213,29 @@ a:hover{
         width: 90%; }
 
     .has-docked-nav .navbar-logozito {
-        visibility: visible;
+        display: block;
     }
 
     .has-docked-nav .logotipo {
-        visibility: hidden;
+        display: none;
     }
+
+    .has-docked-nav .topsy{
+        margin-top: 35vh;
+    }
+
     .has-docked-nav .navbar-link {
 
         font-size: calc(10px + 1vw);
         letter-spacing: calc(.04rem+.01vw);
     }
 
+    .get-logo-again .logotipo {
+        display: block;
+        width: calc(350px + 10vw);
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
         /* Popover */
