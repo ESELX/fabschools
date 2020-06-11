@@ -92,8 +92,8 @@ a:hover{
     text-align: center;
 }
 
-.navbar {
-    display:block;}
+.navbar{
+    display:none ; }
 
 .logotipo {
     display: block;
@@ -115,6 +115,8 @@ a:hover{
     margin-right: auto;
     margin-top: 1.6vh;
 }
+
+
 
 
 .button,
@@ -185,6 +187,9 @@ input[type="button"]:focus {
 
     .columns {
         margin-left: 2%; }
+
+    .navbar{
+        display:none ; }
 
 
 
