@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Work+Sans:wght@300;700&display=swap" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,6 +31,8 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
           integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh"
           crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.js" type="text/javascript"></script>
   <script src="js/site.js"></script>
   <!-- Load the Paper.js library -->
@@ -218,8 +220,10 @@
 
       <section id="calendar" style="height: 100vh;" >
         <div class="row">
+          <h3 class="title" style="padding-top: 30vh">Opening Weeks Events</h3>
+        </div>
+        <div class="row">
           <div class="six columns">
-            <h3 class="title" style="padding-top: 30vh">Opening Weeks Events</h3>
             <p class="boxed">Wikifactory Workshop - 24/06/2020 - 16:00 WET;</p>
             <p class="boxed">ScopesDF - Fab Foundation Workshop -  25/06/2020 - 16:00 WET;</p>
             <p class="boxed">Future Learning Unit @ Fablab Barcelona (IAAC) Presentation - 29/06/2020 - 17:00 WET;</p>
@@ -227,14 +231,23 @@
             <p class="boxed">more TBA!!!;</p>
             <p class="boxed"><strong>Deadline for Applications 15th of September</strong></p>
           </div>
+          <div class="six columns">
+
+            <div class="boxed">
+              <a href="https://www.scopesdf.org/scopesdf_lesson/unplugged-projecting-geometry-for-precision-cutting/" target="_blank"> <img width="100%" src="https://www.scopesdf.org/wp-content/uploads/2020/04/IMG_1569-1.jpg" alt="learn how to make complex and precise geometric assemblies" /></a>
+            </div>
+            <caption>Learn how to make complex and precise geometric assemblies by Daniel Smithwick on ScopesDF</caption>
+          </div>
       </section>
 
 
-    <section id="submit" style="height: 100vh;" >
+    <section id="submit"  >
       <div class="row">
-        <div class="ten columns">
-          <h3 class="title" style="padding-top: 30vh">Application</h3>
-          <h4>A. We will accept 2 types of submission:</h4>
+        <h3 class="title" style="padding-top: 30vh">Application</h3>
+        <h4><strong>A. We will accept 2 types of submission:</strong></h4>
+      </div>
+      <div class="row">
+        <div class="eight columns">
           <p class="boxed">A product that:<br><br>
             . can be easily made by a child (under12) or educator, and in which the making, changing or customizing embeds learning;<br>
             . is documented on Wikifactory and openly licensed, in order to allow others to use and change/adapt;<br>
@@ -250,13 +263,19 @@
             . contributes to sustainability and addresses one or more UN Sustainable Development Goal;<br>
             . includes quality documentation and is clear about production, costs, equipment and safety.
           </p>
-          <br>
-          <h4>B. If any of your projects meet the previous requirements, feel free to apply through this form:</h4>
-          <p class="boxed">It won’t take you more than 10 minutes. We basically want some information and publishing consent, as well as links to your public information about the project.</p>
-          <div id=typeform" class="boxed"></div>
-
-
         </div>
+        <div class="four columns">
+          <div class="boxed">
+            <a href="https://wikifactory.com/+OttoDIY/otto-diy" target="_blank"> <img width="100%" src="https://s3.eu-central-1.amazonaws.com/wikifactory-prod.uploads/655/ottodiyofficialtobotbuilderkit.jpg" alt="Otto DiY is a great example of full documentation on Wikifactory" /></a>
+          </div>
+          <caption>Otto DiY is a great example of full documentation on Wikifactory</caption>
+        </div>
+      </div>
+      <div class="row">
+        <h4><strong>B. If any of your projects meet the previous requirements, feel free to apply through this form:</strong></h4>
+        <p class="boxed">It won’t take you more than 10 minutes. We basically want some information and publishing consent, as well as links to your public information about the project.</p>
+        <div id=typeform" class="boxed"></div>
+      </div>
     </section>
 
 

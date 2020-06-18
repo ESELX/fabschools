@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'Monument Extended';
-    src: url('../fonts/MonumentExtended-Bold.woff2') format('woff2'),
-    url('../fonts/MonumentExtended-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -15,14 +8,15 @@ a {
     color: black; }
 
 p{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: 2rem;
 }
 
 h1,h2,h3 {
-    font-family: 'Monument Extended';
-    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -30,6 +24,10 @@ body {
     color: black;
     background-color: #b4c3ca;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23bdccd4' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: "Work Sans", sans-serif;
 }
 
 a:hover{
@@ -50,7 +48,7 @@ a:hover{
 
 
 .boxed {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     font-size: calc(16px + (18 - 18) * ((100vw - 200px) / (550 - 200)));
     line-height: calc(18px + (20 - 18) * ((100vw - 200px) / (550 - 200)));
@@ -70,10 +68,10 @@ a:hover{
 
 .title{
 
-    letter-spacing: .1rem;
+    letter-spacing: .01rem;
     margin-left: .8vw;
-    font-size: 3.5rem;
-    line-height: 3.7rem;
+    font-size: 6rem;
+    line-height: 6rem;
 }
 
 
@@ -106,7 +104,7 @@ a:hover{
 }
 
 .topsy{
-    font-size: calc(15px + 1.2vw);
+    font-size: calc(20px + 1.2vw);
     letter-spacing: calc(.04rem+.01vw);
     padding-top: 20vh;
 }
@@ -201,7 +199,7 @@ input[type="button"]:focus {
     }
 
     .topsy{
-        font-size: calc(24px + 1.2vw);
+        font-size: calc(40px + (50 - 40) * ((100vw - 550px) / (750 - 550)));
         letter-spacing: calc(.04rem+.01vw);
         margin-top: 2.5vh;
         padding-top: 0px;
@@ -218,16 +216,13 @@ input[type="button"]:focus {
         display: block;
         width: calc(20px + 6vw);
     }
-
-
-
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
 
     .topsy{
-        font-size: calc(24px + (35 - 24) * ((100vw - 750px) / (1600 - 750)));
+        font-size: calc(32px + (42 - 32) * ((100vw - 750px) / (1600 - 750)));
         letter-spacing: calc(.04rem+.01vw);
         margin-top: 2.5vh;
     }
