@@ -273,9 +273,10 @@ input[type="button"]:focus {
         margin-left:0px;
     }
     .navbar-link {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Oswald', sans-serif;
         font-weight: 700;
-        font-size: calc(15px + 1vw);
+        text-transform: uppercase;
+        font-size: calc(15px + .8vw);
         letter-spacing: calc(.04rem+.01vw);
         margin-right: .3rem;
         text-decoration: none;
