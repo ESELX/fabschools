@@ -43,7 +43,10 @@ a:hover{
 }
 
 .sectionFooterDecor{
-    width:100vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
 }
 
 
